@@ -1,0 +1,167 @@
+* {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+}
+
+body {
+
+        height: 100vh;
+        background-image: url(/kiddo.jpg);
+        background-position: center;
+        object-fit: cover;
+}
+
+li {
+
+    list-style: none;
+}
+
+a {
+
+    text-decoration: none;
+    color: gold;
+    font-size: 16px;
+}
+
+a:hover {
+
+    color: greenyellow;
+}
+
+header {
+
+        position: relative;
+        padding: 0 32px;
+}
+
+.bar {
+
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.bar .logo {
+
+        font-size: 24px;
+        font-weight: bold;
+}
+
+.bar .link {
+
+        display: flex;
+        gap: 32px;
+}
+
+.bar .tangle {
+
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn {
+
+    background-color: blue;
+    color: #fff;
+    padding: 8px 24px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.btn:hover{
+        scale: 1.05;
+        color: #fff;
+}
+
+.btn:active {
+
+        scale: 0.95;
+}
+
+/*fall menu*/
+
+.fall {
+
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
+}
+
+
+.fall.open {
+
+        height: 240px;
+}
+.fall li {
+
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+
+.fall .btn {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+}
+
+
+@media(max-width: 992px) {
+
+    .bar .link,
+    .bar .btn {
+        display: none;
+    }
+
+    .bar .tangle {
+        display: block;
+    }
+    .fall {
+            display: block;
+    }
+
+}
+
+
+#group {
+
+       color: gold;
+       font-style: italic;
+      
+}
+
+#one {
+
+        margin-top: 400px;
+        align-items: center;
+}
+
